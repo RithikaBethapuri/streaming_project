@@ -1,0 +1,11 @@
+bundle:
+  name: databricks_streaming_mini_project
+
+resources:
+  jobs:
+    streaming_etl_job:
+      name: streaming-etl-mini-project
+      tasks:
+        - task_key: run_stream
+          notebook_task:
+            notebook_path: ../src/01_streaming_pipeline.py
